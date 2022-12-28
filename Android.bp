@@ -70,6 +70,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "OPCarrierLocation",
+	owner: "oneplus",
+	apk: "proprietary/product/app/OPCarrierLocation/OPCarrierLocation.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "PowerOffAlarm",
 	owner: "oneplus",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -105,6 +116,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MotoSignatureApp",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/MotoSignatureApp/MotoSignatureApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "QtiTelephonyService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -116,9 +138,22 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DaxUI",
+	name: "IFAAService",
 	owner: "oneplus",
-	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
+	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "MotoDolbyDax3",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk",
+	overrides: ["MusicFX"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -128,10 +163,10 @@ android_app_import {
 }
 
 android_app_import {
-	name: "IFAAService",
+	name: "MotorolaSettingsProvider",
 	owner: "oneplus",
-	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
-	presigned: true,
+	apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -207,6 +242,20 @@ dex_import {
 }
 
 dex_import {
+	name: "com.motorola.frameworks.core.addon",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.motorola.frameworks.core.addon.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.motorola.motosignature.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "com.qti.dpmframework",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
@@ -217,6 +266,27 @@ dex_import {
 	name: "dpmapi",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "moto-checkin",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/moto-checkin.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "moto-settings",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/moto-settings.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "moto",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/moto.jar"],
 	system_ext_specific: true,
 }
 
