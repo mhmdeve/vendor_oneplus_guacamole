@@ -1450,6 +1450,7 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
+    android.hidl.manager-V1.0-java \
     tcmclient \
     remotesimlockmanagerlibrary \
     uimgbalibrary \

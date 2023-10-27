@@ -389,6 +389,12 @@ dex_import {
 }
 
 dex_import {
+	name: "android.hidl.manager-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system/framework/android.hidl.manager-V1.0-java.jar"],
+}
+
+dex_import {
 	name: "tcmclient",
 	owner: "oneplus",
 	jars: ["proprietary/system/framework/tcmclient.jar"],
