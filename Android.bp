@@ -46,6 +46,17 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "CACertService",
+	owner: "oneplus",
+	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -60,6 +71,17 @@ android_app_import {
 	name: "IWlanService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "QCC-TR-UI",
+	owner: "oneplus",
+	apk: "proprietary/vendor/app/QCC-TR-UI/QCC-TR-UI.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -83,6 +105,17 @@ android_app_import {
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk",
 	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.improvetouch.service",
+	owner: "oneplus",
+	apk: "proprietary/vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
