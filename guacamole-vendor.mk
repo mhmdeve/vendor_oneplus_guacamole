@@ -43,12 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/system_ext/etc/sysconfig/config-com.motorola.motosignature.app.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.motorola.motosignature.app.xml \
     vendor/oneplus/guacamole/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/guacamole/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/oneplus/guacamole/proprietary/system_ext/lib/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmctmgr.so \
-    vendor/oneplus/guacamole/proprietary/system_ext/lib/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmfdmgr.so \
-    vendor/oneplus/guacamole/proprietary/system_ext/lib/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmframework.so \
-    vendor/oneplus/guacamole/proprietary/system_ext/lib/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmtcm.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
@@ -70,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
-    vendor/oneplus/guacamole/proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/guacamole/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -180,6 +174,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
     vendor/oneplus/guacamole/proprietary/vendor/bin/ssgqmigd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd \
     vendor/oneplus/guacamole/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
+    vendor/oneplus/guacamole/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
+    vendor/oneplus/guacamole/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
+    vendor/oneplus/guacamole/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
     vendor/oneplus/guacamole/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/oneplus/guacamole/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/oneplus/guacamole/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
@@ -664,6 +661,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/vendor/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
+    vendor/oneplus/guacamole/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
@@ -1096,6 +1094,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_ddpdec.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrightdolby.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstblur_capture_api.so \
+    vendor/oneplus/guacamole/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
@@ -1271,6 +1270,7 @@ PRODUCT_PACKAGES += \
     moto-settings \
     moto \
     qcrilhook \
+    qti-telephony-common \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
